@@ -17,7 +17,14 @@ Avant de répondre à une demande transversale ou touchant un autre projet, cons
   Dès que vous créez une nouvelle web-app ou déployez une mise à jour d'application pour Thomas, vous **DEVEZ systématiquement** vérifier qu'elle est référencée et à jour dans le **Tapp Store** (`index.html`, `scripts/sync_projects.py`, `projects.json` dans `/Users/thomaslefevre/.t3/projects/allinone`) et pousser la mise à jour sur GitHub (`https://mrthomaslef.github.io/allinone/`).
 - **💖 Mapp Store (`/Users/thomaslefevre/.t3/projects/mapp-store`)** :
   Dès qu'une application créée ou mise à jour **concerne son épouse Marie** (Pédiatrie/Infectiologie comme `BiblioMarie`, Vie de famille & couple comme `Agenda Famille`, `Resto en Amoureux`, `Voyages-Voyages`, `Photo Famille`, Émile & `AssMat`/Mabrouka, ou Jeux familiaux comme `DinoCiel`, `milTCG`, `QUIZ du 7TER`, `Monopoly`, `PokéQuiz`), vous **DEVEZ systématiquement l'ajouter et la mettre à jour AUSSI sur le Mapp Store** (`index.html`, `scripts/sync_projects.py`, `projects.json` dans `/Users/thomaslefevre/.t3/projects/mapp-store`) et pousser sur GitHub (`https://mrthomaslef.github.io/mapp-store/`).
+
+### 3. Coffre-Fort d'Identifiants & Mots de Passe (`t3-vault` — Trousseau macOS) :
+- Tous les identifiants et mots de passe de Thomas sont stockés dans le **Trousseau macOS** via `/Users/thomaslefevre/.t3/bin/t3-vault`.
+- Avant de demander un identifiant à l'utilisateur, vérifiez s'il est déjà dans le coffre-fort : `/Users/thomaslefevre/.t3/bin/t3-vault list`.
+- Pour récupérer un identifiant ou mot de passe : `/Users/thomaslefevre/.t3/bin/t3-vault get <service> --field user` et `/Users/thomaslefevre/.t3/bin/t3-vault get <service> --field password`.
+- Pour enregistrer un nouveau mot de passe : appelez l'outil `request_secret` (`delivery: "file"`) puis exécutez `/Users/thomaslefevre/.t3/bin/t3-vault set <service> --user "<login>" --password-file "<fichier>"`.
 <!-- SUPER_AGENT_ROUTER_END -->
+
 
 
 
