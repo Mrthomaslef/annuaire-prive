@@ -1,4 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#0891b2"/>
-  <text x="32" y="32" dy="0.35em" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="26" font-weight="600" fill="#ffffff">PR</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="55%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.55" />
+    </filter>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect width="512" height="512" rx="116" fill="url(#bgGrad)" />
+  <rect x="10" y="10" width="492" height="492" rx="108" fill="none" stroke="#38bdf8" stroke-opacity="0.22" stroke-width="4" />
+
+  <!-- Subtle Glow -->
+  <circle cx="240" cy="220" r="170" fill="#6366f1" opacity="0.18" />
+
+  <!-- Address Book Tabs (Right side) -->
+  <rect x="384" y="128" width="28" height="52" rx="10" fill="#38bdf8" />
+  <rect x="384" y="196" width="28" height="52" rx="10" fill="#818cf8" />
+  <rect x="384" y="264" width="28" height="52" rx="10" fill="#c084fc" />
+  <rect x="384" y="332" width="28" height="52" rx="10" fill="#34d399" />
+
+  <!-- Main Address Book Body -->
+  <rect x="104" y="88" width="292" height="336" rx="36" fill="url(#cardGrad)" filter="url(#shadow)" />
+  <rect x="104" y="88" width="292" height="336" rx="36" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="4" />
+
+  <!-- Spine & Rings -->
+  <rect x="104" y="88" width="38" height="336" rx="18" fill="#0f172a" fill-opacity="0.38" />
+  <rect x="86" y="140" width="36" height="16" rx="8" fill="#e2e8f0" />
+  <rect x="86" y="212" width="36" height="16" rx="8" fill="#e2e8f0" />
+  <rect x="86" y="284" width="36" height="16" rx="8" fill="#e2e8f0" />
+  <rect x="86" y="356" width="36" height="16" rx="8" fill="#e2e8f0" />
+
+  <!-- Contact Silhouette Inside Book -->
+  <circle cx="262" cy="198" r="42" fill="#ffffff" fill-opacity="0.95" />
+  <path d="M194 310 C194 268, 330 268, 330 310 L330 326 C330 334, 324 340, 316 340 L208 340 C200 340, 194 334, 194 326 Z" fill="#ffffff" fill-opacity="0.95" />
+
+  <!-- Medical / Phone Cross Badge on Top Left of Book -->
+  <circle cx="176" cy="140" r="20" fill="#0f172a" fill-opacity="0.35" />
+  <path d="M176 128 V152 M164 140 H188" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" />
+
+  <!-- Security Lock Badge (Bottom Right) -->
+  <g filter="url(#shadow)">
+    <circle cx="372" cy="376" r="74" fill="#0f172a" stroke="url(#goldGrad)" stroke-width="6" />
+    <!-- Shackle -->
+    <path d="M348 360 V340 C348 325, 396 325, 396 340 V360" fill="none" stroke="url(#goldGrad)" stroke-width="12" stroke-linecap="round" />
+    <!-- Lock Body -->
+    <rect x="334" y="356" width="76" height="60" rx="14" fill="url(#goldGrad)" />
+    <!-- Keyhole -->
+    <circle cx="372" cy="381" r="8" fill="#0f172a" />
+    <path d="M372 386 V401" stroke="#0f172a" stroke-width="6" stroke-linecap="round" />
+  </g>
 </svg>

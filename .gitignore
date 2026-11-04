@@ -1,0 +1,9 @@
+# Fichiers locaux non chiffrés (ne jamais publier sur GitHub)
+Documents_Importants/
+ANNUAIRE_CONTACTS_IMPORTANTS.csv
+ANNUAIRE_CONTACTS_IMPORTANTS.md
+ANNUAIRE_CONTACTS_IMPORTANTS.vcf
+INDEX_DOCUMENTS.csv
+INDEX_DOCUMENTS.md
+PORTAIL_DOCUMENTS_ET_ANNUAIRE.html
+.DS_Store

@@ -1,0 +1,24 @@
+{
+  "name": "Annuaire Privé — Dr Thomas Lefèvre",
+  "short_name": "Annuaire Privé",
+  "description": "Annuaire privé chiffré par code PIN (291 contacts AP-HP Cochin, Pitié, Confrères, Famille & Postes DECT)",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#070b14",
+  "theme_color": "#0b1120",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
