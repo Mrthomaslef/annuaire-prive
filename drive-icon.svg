@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061224" />
+      <stop offset="50%" stop-color="#0f2942" />
+      <stop offset="100%" stop-color="#051e24" />
+    </linearGradient>
+    <linearGradient id="folderBack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <linearGradient id="folderFront" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="55%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="badge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="sh" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="116" fill="url(#bg)" />
+  <rect x="10" y="10" width="492" height="492" rx="108" fill="none" stroke="#38bdf8" stroke-opacity="0.25" stroke-width="4" />
+
+  <!-- Back Folder Tab -->
+  <path d="M88 144 C88 124 104 108 124 108 L216 108 C230 108 240 116 248 128 L266 154 L388 154 C408 154 424 170 424 190 L424 372 C424 392 408 408 388 408 L124 408 C104 408 88 392 88 372 Z" fill="url(#folderBack)" />
+
+  <!-- Paper sheets sticking out -->
+  <rect x="122" y="142" width="268" height="190" rx="18" fill="#e2e8f0" opacity="0.88" transform="rotate(-3 256 237)" />
+  <rect x="126" y="152" width="260" height="190" rx="18" fill="#ffffff" />
+  <line x1="158" y1="186" x2="290" y2="186" stroke="#94a3b8" stroke-width="10" stroke-linecap="round" />
+  <line x1="158" y1="214" x2="342" y2="214" stroke="#cbd5e1" stroke-width="10" stroke-linecap="round" />
+
+  <!-- Front Folder Flap -->
+  <rect x="80" y="196" width="352" height="220" rx="34" fill="url(#folderFront)" filter="url(#sh)" stroke="#ffffff" stroke-opacity="0.3" stroke-width="4" />
+
+  <!-- Magnifying Glass (Search Bar Symbol) on Folder -->
+  <circle cx="238" cy="298" r="46" fill="#0f172a" fill-opacity="0.28" stroke="#ffffff" stroke-width="14" />
+  <line x1="272" y1="332" x2="308" y2="368" stroke="#ffffff" stroke-width="16" stroke-linecap="round" />
+
+  <!-- Live Tunnel Green Pulse Badge -->
+  <g filter="url(#sh)">
+    <circle cx="384" cy="382" r="68" fill="#0f172a" stroke="url(#badge)" stroke-width="6" />
+    <circle cx="384" cy="382" r="48" fill="url(#badge)" />
+    <!-- Cloud / Lightning bolt -->
+    <path d="M390 352 L366 386 H386 L378 412 L404 378 H384 Z" fill="#ffffff" />
+  </g>
+</svg>
