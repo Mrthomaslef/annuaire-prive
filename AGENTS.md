@@ -27,7 +27,7 @@ Avant de répondre à une demande transversale ou touchant un autre projet, cons
 ### 4. Instincts Atomiques Appris des Inputs de Thomas (`t3-instincts` — Ne jamais répéter ces erreurs) :
 Ces règles sont extraites chaque nuit des inputs et corrections de Thomas. **Appliquez-les systématiquement sans qu'il ait besoin de le redemander** :
 ```text
-# Active Instincts (10/15 | project=projet-regroup)
+# Active Instincts (9/13 | project=projet-regroup)
 - [0.98][GLOBAL][ui-pwa] fullscreen-launch-and-controller-verify: WHEN Lors de la création ou configuration d'un lanceur de jeu (Recomp, Pegasus, Moonlight), d'un lecteur vidéo (Stremio/Film) ou d'un bouton 'Jouer direct' -> Toujours forcer l'ouverture en plein écran d'emblée (sans modale ni pop-up bloquante), vérifier le mapping manette (8BitDo) et la présence des sauvegardes avant d'annoncer que c'est terminé.
 - [0.98][GLOBAL][ui-pwa] mobile-first-no-overflow-no-zoom: WHEN Lors de la création d'interfaces web, de tableaux cliniques ou de boutons interactifs consultés sur iPhone / mobile -> Empêcher le zoom au double-clic (touch-action: manipulation), garantir zéro débordement horizontal des tableaux sur mobile et privilégier des interfaces épurées orientées action directe.
 - [0.95][GLOBAL][ui-pwa] pull-to-refresh-systematic: WHEN Lors de la création ou modification d'une application web ou PWA mobile/desktop -> Implanter systématiquement le Pull-to-Refresh tactile (touch) et souris (mouse) avec overscroll-behavior-y: contain et vibration haptique.
@@ -36,12 +36,12 @@ Ces règles sont extraites chaque nuit des inputs et corrections de Thomas. **Ap
 - [0.92][GLOBAL][architecture] offline-embedded-bundle-pwa: WHEN Lors de la construction d'une PWA statique hébergée sur GitHub Pages avec données JSON -> Générer un fichier data/embedded_data.js (window.*_DATA) en plus des fichiers .json afin que l'application fonctionne à 100 % hors-ligne et en file:// sans erreur CORS.
 - [0.92][GLOBAL][workflow] superpowers-verify-before-completion: WHEN Avant d'affirmer qu'une tâche, un script ou un déploiement est terminé -> Exécuter une vérification réelle (test, build_data.py, sync_projects.py, git status/diff) et citer le résultat observé. Pas de sous-agent par micro-tâche pour les petits correctifs afin de préserver les quotas 5h.
 - [0.85][GLOBAL][git-deploy] git-push-systematic-verification: WHEN À la fin de toute modification de code, d'application web ou de configuration -> Vérifier systématiquement avec git status et git push que tous les dépôts modifiés (ainsi que Tapp Store / Mapp Store) sont poussés et à jour sur GitHub.
-- [0.85][GLOBAL][workflow] play-button-fullscreen-no-popup: WHEN Fin d'un projet de jeu/app, ou ajout d'un bouton 'jouer direct' -> Vérifier réellement (navigateur) que le jeu se lance en plein écran et qu'aucune pop-up (alert/confirm/modale/permission) n'apparaît avant de déclarer terminé
 - [0.85][GLOBAL][git-deploy] tapp-store-custom-logo-and-cache-bust: WHEN À chaque création ou modification d'une application web ou PWA référencée sur le Tapp Store (allinone) ou Mapp Store -> Créer systématiquement un vrai logo SVG/PNG illustré dans assets/, le copier dans allinone/assets/, incrémenter CACHE_KEY dans index.html, purger les Service Workers pour que les modifications soient visibles immédiatement sans cache, et faire git commit + git push sur le projet ET sur le store.
 ```
 - Dès que Thomas exprime une préférence récurrente ou corrige un comportement en session, enregistrez l'instinct immédiatement :
   `/Users/thomaslefevre/.t3/bin/t3-instincts learn --id "<slug>" --trigger "<quand>" --action "<action>" --project "$PWD"`
 <!-- SUPER_AGENT_ROUTER_END -->
+
 
 
 
