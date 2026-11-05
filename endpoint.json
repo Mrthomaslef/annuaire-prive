@@ -1,6 +1,6 @@
 {
-  "tunnelUrl": "https://api.trycloudflare.com",
+  "tunnelUrl": "https://pointed-oriented-tablet-php.trycloudflare.com",
   "lanUrl": "http://192.168.1.111:8795",
   "localUrl": "http://127.0.0.1:8795",
-  "updatedAt": "2026-11-05T10:56:47.797217+00:00"
+  "updatedAt": "2026-11-05T10:56:58.662995+00:00"
 }
