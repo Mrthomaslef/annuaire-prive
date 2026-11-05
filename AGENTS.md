@@ -23,7 +23,14 @@ Avant de répondre à une demande transversale ou touchant un autre projet, cons
 - Avant de demander un identifiant à l'utilisateur, vérifiez s'il est déjà dans le coffre-fort : `/Users/thomaslefevre/.t3/bin/t3-vault list`.
 - Pour récupérer un identifiant ou mot de passe : `/Users/thomaslefevre/.t3/bin/t3-vault get <service> --field user` et `/Users/thomaslefevre/.t3/bin/t3-vault get <service> --field password`.
 - Pour enregistrer un nouveau mot de passe : appelez l'outil `request_secret` (`delivery: "file"`) puis exécutez `/Users/thomaslefevre/.t3/bin/t3-vault set <service> --user "<login>" --password-file "<fichier>"`.
+
+### 4. Workflow `superpowers` & Instincts Atomiques Locaux (`t3-instincts`) :
+- Au début d'une tâche d'ingénierie, chargez les instincts actifs du projet : `/Users/thomaslefevre/.t3/bin/t3-instincts context --project "$PWD"`.
+- Suivez la méthodologie `superpowers` : Spec concise → Micro-Plan YAGNI (exécution inline par défaut pour préserver les quotas 5h) → Root-Cause Debugging → Preuve réelle avant complétion (`Verification Before Completion`).
+- Dès que Thomas exprime une préférence récurrente ou corrige un comportement, enregistrez l'instinct en local : `/Users/thomaslefevre/.t3/bin/t3-instincts learn --id "<slug>" --trigger "<quand>" --action "<action>" --project "$PWD"`.
 <!-- SUPER_AGENT_ROUTER_END -->
+
+
 
 
 
