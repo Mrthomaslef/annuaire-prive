@@ -27,9 +27,10 @@ Avant de répondre à une demande transversale ou touchant un autre projet, cons
 ### 4. Instincts Atomiques Appris des Inputs de Thomas (`t3-instincts` — Ne jamais répéter ces erreurs) :
 Ces règles sont extraites chaque nuit des inputs et corrections de Thomas. **Appliquez-les systématiquement sans qu'il ait besoin de le redemander** :
 ```text
-# Active Instincts (9/13 | project=projet-regroup)
+# Active Instincts (10/16 | project=projet-regroup)
 - [0.98][GLOBAL][ui-pwa] fullscreen-launch-and-controller-verify: WHEN Lors de la création ou configuration d'un lanceur de jeu (Recomp, Pegasus, Moonlight), d'un lecteur vidéo (Stremio/Film) ou d'un bouton 'Jouer direct' -> Toujours forcer l'ouverture en plein écran d'emblée (sans modale ni pop-up bloquante), vérifier le mapping manette (8BitDo) et la présence des sauvegardes avant d'annoncer que c'est terminé.
 - [0.98][GLOBAL][workflow] mobile-first-no-overflow-no-zoom: WHEN Lors de la création d'interfaces web, de tableaux cliniques ou de boutons interactifs consultés sur iPhone / mobile -> Empêcher le zoom au double-clic (touch-action: manipulation), garantir zéro débordement horizontal des tableaux sur mobile et privilégier des interfaces épurées orientées action directe.
+- [0.95][GLOBAL][workflow] auto-handle-macos-permission-dialogs: WHEN Après tout lancement d'app/jeu/script sur le Mac (osascript, nouvelle app, fichier sur GamingSSD/volume externe) ou quand une app reste figée sans fenêtre -> Faire screencapture -x et lire l'image ; s'il y a une fenêtre d'autorisation macOS (System Events, volume amovible, Accessibilité, Documents, Bluetooth, micro…) pour un outil/app légitime de Thomas, cliquer soi-même Autoriser avec /Users/thomaslefevre/.t3/bin/mac-click X Y (coords en points 1920x1080), re-capturer pour traiter les fenêtres empilées dessous, et ne jamais laisser de pop-up à Thomas. Ne jamais autoriser une demande inconnue/suspecte : la signaler.
 - [0.95][GLOBAL][ui-pwa] pull-to-refresh-systematic: WHEN Lors de la création ou modification d'une application web ou PWA mobile/desktop -> Implanter systématiquement le Pull-to-Refresh tactile (touch) et souris (mouse) avec overscroll-behavior-y: contain et vibration haptique.
 - [0.95][GLOBAL][security] t3-vault-keychain-only: WHEN Lorsqu'un identifiant, secret, token API ou mot de passe est requis ou fourni -> Ne jamais demander ni afficher de mot de passe en clair dans le chat. Toujours interroger /Users/thomaslefevre/.t3/bin/t3-vault ou utiliser request_secret (delivery: file) puis t3-vault set.
 - [0.95][GLOBAL][git-deploy] tapp-mapp-store-dual-publish: WHEN Après toute création, mise à jour ou déploiement d'une web-app -> Mettre à jour et pousser systématiquement sur Tapp Store (allinone) ET sur Mapp Store (mapp-store) si l'app concerne Marie, Émile ou la famille.
@@ -41,6 +42,7 @@ Ces règles sont extraites chaque nuit des inputs et corrections de Thomas. **Ap
 - Dès que Thomas exprime une préférence récurrente ou corrige un comportement en session, enregistrez l'instinct immédiatement :
   `/Users/thomaslefevre/.t3/bin/t3-instincts learn --id "<slug>" --trigger "<quand>" --action "<action>" --project "$PWD"`
 <!-- SUPER_AGENT_ROUTER_END -->
+
 
 
 
